@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy the static HTML files into the Nginx HTML directory
-COPY . /usr/share/nginx/html
+COPY ./home/ec2-user/webapp /usr/share/nginx/html
 
 # Expose port 80 to allow external access
 EXPOSE 80
